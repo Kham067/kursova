@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Головна | Автопродаж UA</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      background-color: #ff6600;
+      padding: 20px 0;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo2 {
+      color: #f5f5f5;
+      font-family: "Showcard Gothic", cursive;
+      font-size: clamp(16px, 5vw, 32px);
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .header__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu__list {
+      display: flex;
+      gap: 40px;
+    }
+
+    .menu__list-item {
+      color: #ff6600;
+      font-size: clamp(14px, 3vw, 20px);
+    }
+
+    .menu__list-link {
+      color: #f5f5f5;
+      text-decoration: none;
+      font-size: clamp(14px, 3vw, 20px);
+    }
+
+    .photo {
+      text-align: center;
+    }
+
+    .photo img {
+      width: 80%;
+      height: auto;
+      object-fit: cover;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+      text-align: center;
+      padding: 40px 20px;
+      margin: 0 auto;
+      max-width: 1000px;
+      font-size: clamp(14px, 5vw, 22px);
+      font-family: "Showcard Gothic", cursive;
+      color: #ff6600;
+    }
+
+    .auto-form {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 800px;
+      margin: 40px auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .auto-form h2 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 20px;
+    }
+
+    .auto-form label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333333;
+      font-weight: bold;
+    }
+
+    .auto-form input,
+    .auto-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #cccccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    .auto-form button {
+      background-color: #ff6600;
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .auto-form button:hover {
+      background-color: #e65300;
+    }
+
+    .ads-section {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .ad-card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .ad-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .ad-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .ad-details {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .ad-details h3 {
+      margin: 10px 0 5px;
+      color: #003366;
+      font-size: 20px;
+    }
+
+    .ad-details p {
+      margin: 5px 0;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .footer {
+      background-color: #ff6600;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    .footer_inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer__contact {
+      color: #f5f5f5;
+      font-family: "Showcard Gothic", cursive;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .footer__contact-list-link {
+      color: #f5f5f5;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="header__inner">
+      <div class="logo">
+        <a href="index.html" class="logo2">Автопродаж UA</a>
+      </div>
+      <nav class="menu__list">
+        <a href="index.html" class="menu__list-link">Головна</a>
+        <a href="AUTO.html" class="menu__list-link">Авто</a>
+        <a href="contact.html" class="menu__list-link">Зв'язок з нами</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+
+<div class="content">
+  Купуйте та продавайте авто легко з нами! Додайте своє оголошення або перегляньте наявні пропозиції.
+</div>
+
+
+
+<div class="ads-section">
+  <a href="bmw.html" class="ad-card">
+    <img src="images/bmw_x5.jpg" alt="Оголошення 1" />
+    <div class="ad-details">
+      <h3>BMW X5 2018</h3>
+      <p>Пробіг: 85 000 км | Дизель | Автомат</p>
+      <p>Ціна: $53,000</p>
+      <p>Позашляховик у відмінному стані. Без ДТП.</p>
+    </div>
+  </a>
+
+  <a href="toyota.html" class="ad-card">
+    <img src="images/toyota_corolla.jpg" alt="Оголошення 2" />
+    <div class="ad-details">
+      <h3>Toyota Corolla 2016</h3>
+      <p>Пробіг: 120 000 км | Бензин | Механіка</p>
+      <p>Ціна: $12,000</p>
+      <p>Ідеальне авто для міста. Економне споживання.</p>
+    </div>
+  </a>
+
+  <a href="audi.html" class="ad-card">
+    <img src="images/audi_a6.jpg" alt="Оголошення 3" />
+    <div class="ad-details">
+      <h3>Audi A6 2020</h3>
+      <p>Пробіг: 45 000 км | Дизель | Автомат</p>
+      <p>Ціна: $39,500</p>
+      <p>Преміум авто з повним приводом.</p>
+    </div>
+  </a>
+
+  <a href="Hyndai.html" class="ad-card">
+    <img src="images/hyundai_tucson.jpg" alt="Оголошення 4" />
+    <div class="ad-details">
+      <h3>Hyundai Tucson 2019</h3>
+      <p>Пробіг: 67 000 км | Бензин | Автомат</p>
+      <p>Ціна: $21,000</p>
+      <p>Надійний кросовер з гарною комплектацією.</p>
+    </div>
+  </a>
+
+  <a href="golf.html" class="ad-card">
+    <img src="images/volkswagen_golf.jpg" alt="Оголошення 5" />
+    <div class="ad-details">
+      <h3>Volkswagen Golf 2015</h3>
+      <p>Пробіг: 150 000 км | Дизель | Механіка</p>
+      <p>Ціна: $9,800</p>
+      <p>Комфортний хетчбек. Вчасне обслуговування.</p>
+    </div>
+  </a>
+
+  <a href="mers.html" class="ad-card">
+    <img src="images/mercedes-benz_c-class.jpg" alt="Оголошення 6" />
+    <div class="ad-details">
+      <h3>Mercedes-Benz C-Class 2017</h3>
+      <p>Пробіг: 70 000 км | Бензин | Автомат</p>
+      <p>Ціна: $26,000</p>
+      <p>Стильний та динамічний седан. Готовий до поїздок.</p>
+    </div>
+  </a>
+</div>
+
+
+<footer class="footer">
+  <div class="footer_inner">
+    <div class="footer__contact">
+      <p>Контакти:</p>
+      <p> +38 (097) 123-45-67</p>
+      <p>Email: info@autoprodaj.ua</p>
+      <a href="#" class="footer__contact-list-link">Instagram</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

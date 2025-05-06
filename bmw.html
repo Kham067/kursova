@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Автопродаж UA</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #F5F5F5;
+    }
+
+    header {
+      background-color: #FF6600;
+      padding: 20px 0;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo2 {
+      color: #F5F5F5;
+      font-family: "Showcard Gothic", cursive;
+      font-size: clamp(16px, 5vw, 32px);
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .header__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .menu__list {
+      display: flex;
+      gap: 40px;
+    }
+
+    .menu__list-item {
+      color: #FF6600;
+      font-size: clamp(14px, 3vw, 20px);
+    }
+
+    .menu__list-link {
+      color: #F5F5F5;
+      text-decoration: none;
+      font-size: clamp(14px, 3vw, 20px);
+    }
+
+    .photo {
+      text-align: center;
+    }
+
+    .photo img {
+      width: 80%;
+      height: auto;
+      object-fit: cover;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+      text-align: center;
+      padding: 40px 20px;
+      margin: 0 auto;
+      max-width: 1000px;
+      font-size: clamp(14px, 5vw, 22px);
+      font-family: "Showcard Gothic", cursive;
+      color: #FF6600;
+    }
+
+    .auto-card {
+      background-color: #FFFFFF;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 1000px;
+      text-align: left;
+    }
+
+    .auto-card h2 {
+      color: #003366;
+      font-size: clamp(18px, 5vw, 30px);
+      margin-bottom: 10px;
+    }
+
+    .auto-description {
+      color: #333333;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .auto-specs {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .spec-item {
+      background-color: #F5F5F5;
+      padding: 10px 15px;
+      border-left: 4px solid #FF6600;
+      font-size: 16px;
+      color: #333333;
+      border-radius: 4px;
+    }
+
+    .footer {
+      background-color: #FF6600;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    .footer_inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer__contact {
+      color: #F5F5F5;
+      font-family: "Showcard Gothic", cursive;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .footer__contact-list-link {
+      color: #F5F5F5;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+ <header>
+  <div class="container">
+    <div class="header__inner">
+      <div class="logo">
+        <a href="index.html" class="logo2">Автопродаж UA</a>
+      </div>
+      <nav class="menu__list">
+        <a href="index.html" class="menu__list-link">Головна</a>
+        <a href="AUTO.html" class="menu__list-link">Авто</a>
+        <a href="contact.html" class="menu__list-link">Зв'язок з нами</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+  <div class="photo">
+    <img src="images/bmw_x5.jpg" alt="BMW X5 G05">
+  </div>
+
+  <div class="content">
+    Потужність, комфорт і престиж — обери BMW X5, який заслуговуєш.
+  </div>
+
+  <div class="auto-card">
+    <h2>BMW X5 G05 xDrive30d 3.0</h2>
+    <p class="auto-description">
+      Преміальний кросовер з бездоганною німецькою якістю, повним приводом, багатою комплектацією та економним дизельним двигуном. Ідеальний варіант для сімейних поїздок і ділових зустрічей.
+    </p>
+    <div class="auto-specs">
+      <div class="spec-item">Рік: 2018</div>
+      <div class="spec-item">Пробіг: 98 000 км</div>
+      <div class="spec-item">Коробка: Автомат (8 ст.)</div>
+      <div class="spec-item">Паливо: Дизель</div>
+      <div class="spec-item">Потужність: 265 к.с.</div>
+      <div class="spec-item">Привід: Повний (xDrive)</div>
+      <div class="spec-item">Ціна: $53,000</div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer_inner">
+      <div class="footer__contact">
+        <p>Контакти:</p>
+        <p> +38 (097) 123-45-67</p>
+        <p>Email: info@autoprodaj.ua</p>
+        <a href="#" class="footer__contact-list-link">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
